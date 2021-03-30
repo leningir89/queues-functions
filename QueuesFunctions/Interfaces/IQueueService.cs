@@ -6,6 +6,6 @@ namespace QueuesFunctions.Interfaces
     {
         Task Delete();
         Task Insert(string message);
-        Task<string> Retrieve();
+        Task<string> Get();
     }
 }
