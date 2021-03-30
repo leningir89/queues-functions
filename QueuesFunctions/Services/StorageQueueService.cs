@@ -20,8 +20,8 @@ namespace QueuesFunctions.Services
 
             if (properties.ApproximateMessagesCount == 0)
             {
-                await client.DeleteIfExistsAsync();
             }
+           await client.DeleteIfExistsAsync();
         }
 
         public async Task Insert(string message)
